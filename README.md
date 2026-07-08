@@ -22,10 +22,12 @@ The primary goal of this repository is to strengthen my understanding of DevOps 
 
 - [x] Introduction
 - [x] Prerequisites & Environment Setup
+- [x] Virtual Machine(VM) Setup
 
 ## 🚧 In Progress
 
-- [ ] Linux
+- [ ] VM Lab (Manual VM Creation)
+- [ ] VM Lab (Automated VM Creation using Vagrant)
 
 ## 📌 Upcoming
 
