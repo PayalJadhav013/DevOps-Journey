@@ -26,8 +26,7 @@ The primary goal of this repository is to strengthen my understanding of DevOps 
 
 ## 🚧 In Progress
 
-- [ ] VM Lab (Manual VM Creation)
-- [ ] VM Lab (Automated VM Creation using Vagrant)
+- [ ] Linux
 
 ## 📌 Upcoming
 
@@ -44,6 +43,33 @@ The primary goal of this repository is to strengthen my understanding of DevOps 
 - [ ] Monitoring (Prometheus & Grafana)
 - [ ] CI/CD
 - [ ] End-to-End DevOps Project
+
+---
+
+# 📅 Latest Progress
+
+## Day 03 - VM Setup
+
+### Topics Covered
+
+- Introduction to Virtualization
+- Oracle VM VirtualBox
+- Virtual Machine Creation
+- Vagrant Installation
+- Vagrantfile
+- VM Provisioning
+- SSH into VM
+
+### Commands Practiced
+
+```bash
+vagrant init
+vagrant up
+vagrant status
+vagrant ssh
+vagrant halt
+vagrant reload
+vagrant destroy
 
 ---
 
@@ -76,23 +102,35 @@ The primary goal of this repository is to strengthen my understanding of DevOps 
 
 ---
 
+# 💻 Hands-on Completed
+
+- Created Virtual Machines manually using Oracle VM VirtualBox
+- Automated VM provisioning using Vagrant
+- Practiced Vagrant commands
+- Connected to VMs using SSH
+- Managed VM lifecycle (Create, Start, Stop, Reload, Destroy)
+
 # 📂 Repository Structure
 
 ```text
 DevOps-Journey/
 │
 ├── README.md
-├── Linux/
-├── Networking/
-├── Git/
-├── Bash/
-├── Docker/
-├── Jenkins/
-├── Kubernetes/
-├── AWS/
-├── Terraform/
-├── Ansible/
-├── Monitoring/
+├── 01-Introduction/
+├── 02-Prerequisites/
+├── 03-VM-Setup/
+├── 04-Linux/
+├── 05-Networking/
+├── 06-Git/
+├── 07-Bash/
+├── 08-Maven/
+├── 09-Jenkins/
+├── 10-Docker/
+├── 11-Kubernetes/
+├── 12-AWS/
+├── 13-Terraform/
+├── 14-Ansible/
+├── 15-Monitoring/
 ├── Projects/
 └── Notes/
 ```
@@ -116,6 +154,7 @@ DevOps-Journey/
 |---------|--------|
 | Introduction | ✅ Completed |
 | Prerequisites & Setup | ✅ Completed |
+| VM Setup | ✅ Completed |
 | Linux | 🚧 In Progress |
 | Remaining Modules | ⏳ Planned |
 
