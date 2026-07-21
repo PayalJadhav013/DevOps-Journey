@@ -275,9 +275,4 @@ After completing this module, I was able to:
 
 ---
 
-## 📝 Handwritten Notes
-
-My handwritten notes for this module are available here:
-
-📄 [VM Setup Handwritten Notes](Handwritten-Notes/VM-Setup-Notes.pdf)
 
