@@ -48,28 +48,47 @@ The primary goal of this repository is to strengthen my understanding of DevOps 
 
 # 📅 Latest Progress
 
-## Day 03 - VM Setup
+## Linux Fundamentals
 
 ### Topics Covered
 
-- Introduction to Virtualization
-- Oracle VM VirtualBox
-- Virtual Machine Creation
-- Vagrant Installation
-- Vagrantfile
-- VM Provisioning
-- SSH into VM
+- Introduction to Linux
+- Linux File System
+- Basic Linux Commands
+- File & Directory Operations
+- Vim Editor
+- Linux File Types
 
 ### Commands Practiced
 
 ```bash
-vagrant init
-vagrant up
-vagrant status
-vagrant ssh
-vagrant halt
-vagrant reload
-vagrant destroy
+pwd
+ls
+ls -l
+ls -a
+cd
+mkdir
+touch
+cp
+mv
+rm
+cat
+head
+tail
+whoami
+history
+clear
+vim
+```
+
+### Hands-on Completed
+
+- Explored the Linux file system
+- Navigated directories using Linux commands
+- Created, copied, moved, and deleted files/directories
+- Viewed file contents using Linux utilities
+- Practiced editing files using the Vim editor
+- Learned different Linux file types and their purposes
 
 ---
 
@@ -102,13 +121,6 @@ vagrant destroy
 
 ---
 
-# 💻 Hands-on Completed
-
-- Created Virtual Machines manually using Oracle VM VirtualBox
-- Automated VM provisioning using Vagrant
-- Practiced Vagrant commands
-- Connected to VMs using SSH
-- Managed VM lifecycle (Create, Start, Stop, Reload, Destroy)
 
 # 📂 Repository Structure
 
