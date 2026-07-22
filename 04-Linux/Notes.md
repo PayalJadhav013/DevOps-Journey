@@ -1,6 +1,7 @@
 # Linux Notes
 
 ## Module Completed
+
 - Introduction to Linux
 - Linux File System
 - Basic Linux Commands
@@ -14,7 +15,7 @@
 
 Linux is an open-source, Unix-based operating system widely used in servers, cloud computing, DevOps, and embedded systems.
 
-### Features
+## Features
 
 - Open Source
 - Multi-user
@@ -24,12 +25,12 @@ Linux is an open-source, Unix-based operating system widely used in servers, clo
 - Portable
 - Command Line Interface (CLI)
 
-### Why Linux in DevOps?
+## Why Linux in DevOps?
 
 - Most cloud servers run Linux.
 - Automation and scripting are easier.
 - Lightweight and reliable.
-- Widely used with Docker, Kubernetes, Jenkins, AWS and Terraform.
+- Widely used with Docker, Kubernetes, Jenkins, AWS, and Terraform.
 
 ---
 
@@ -37,106 +38,108 @@ Linux is an open-source, Unix-based operating system widely used in servers, clo
 
 Everything in Linux is considered a file.
 
-Root directory
+## Root Directory
 
 ```
 /
 ```
 
-Common directories
+## Common Directories
 
 ```
-/home      User home directories
-/root      Root user's home
-/bin       Essential user commands
-/sbin      System administration commands
-/etc       Configuration files
-/usr       User applications
-/var       Log and variable data
-/tmp       Temporary files
-/dev       Device files
-/proc      Process information
+/home    User home directories
+/root    Root user's home directory
+/bin     Essential user commands
+/sbin    System administration commands
+/etc     Configuration files
+/usr     User applications
+/var     Log and variable data
+/tmp     Temporary files
+/dev     Device files
+/proc    Process information
 ```
 
 ---
 
 # 3. Basic Linux Commands
 
-### Current directory
+## Current Directory
 
 ```bash
 pwd
 ```
 
-Shows the current working directory.
+Displays the current working directory.
 
 ---
 
-### List files
+## List Files
 
 ```bash
 ls
 ```
 
-Lists files and folders.
+Lists files and directories.
 
-Useful options
+Useful options:
 
 ```bash
 ls -l
 ```
 
-Long listing.
+Displays detailed information.
 
 ```bash
 ls -a
 ```
 
-Shows hidden files.
+Displays hidden files.
 
 ---
 
-### Change directory
+## Change Directory
 
 ```bash
 cd directory_name
 ```
 
-Move into directory.
+Move into a directory.
 
 ```bash
 cd ..
 ```
 
-Move one level back.
+Move one directory back.
 
 ```bash
 cd ~
 ```
 
-Go to home directory.
+Go to the home directory.
 
 ---
 
-### Clear terminal
+## Clear Terminal
 
 ```bash
 clear
 ```
 
+Clears the terminal screen.
+
 ---
 
-### Current user
+## Current User
 
 ```bash
 whoami
 ```
 
-Displays logged-in username.
+Displays the currently logged-in user.
 
 ---
 
-### Command history
+## Command History
 
 ```bash
 history
@@ -148,7 +151,7 @@ Displays previously executed commands.
 
 # 4. File and Directory Operations
 
-### Create Directory
+## Create Directory
 
 ```bash
 mkdir project
@@ -158,21 +161,23 @@ Creates a new directory.
 
 ---
 
-### Create Empty File
+## Create File
 
 ```bash
 touch file.txt
 ```
 
+Creates an empty file.
+
 ---
 
-### Copy Files
+## Copy Files
 
 ```bash
 cp source destination
 ```
 
-Copy directories
+Copy directories recursively:
 
 ```bash
 cp -r folder1 folder2
@@ -180,21 +185,23 @@ cp -r folder1 folder2
 
 ---
 
-### Move or Rename
+## Move or Rename
 
 ```bash
-mv old.txt new.txt
+mv oldname newname
 ```
+
+Moves or renames files/directories.
 
 ---
 
-### Delete File
+## Remove File
 
 ```bash
 rm file.txt
 ```
 
-Delete directory
+Remove directory recursively:
 
 ```bash
 rm -r folder
@@ -202,7 +209,7 @@ rm -r folder
 
 ---
 
-### Display File
+## Display File Content
 
 ```bash
 cat file.txt
@@ -210,7 +217,7 @@ cat file.txt
 
 ---
 
-### View Beginning
+## View First Lines
 
 ```bash
 head file.txt
@@ -218,7 +225,7 @@ head file.txt
 
 ---
 
-### View End
+## View Last Lines
 
 ```bash
 tail file.txt
@@ -228,57 +235,85 @@ tail file.txt
 
 # 5. Vim Editor
 
-Vim is a command-line text editor.
+Vim is a powerful command-line text editor available in Linux.
 
-## Modes
+## Vim Modes
 
-### Normal Mode
+### 1. Command Mode (Default Mode)
 
-Default mode.
+- Vim starts in **Command Mode** by default.
+- Used for navigation, copying, deleting, and moving around the file.
+- Press **Esc** anytime to return to Command Mode.
 
-### Insert Mode
+---
 
-Press
+### 2. Insert Mode (Edit Mode)
 
-```
+Used for writing or editing text.
+
+Enter Insert Mode:
+
+```bash
 i
 ```
 
-to edit.
+Return to Command Mode:
 
-### Command Mode
-
-Press
-
-```
+```bash
 Esc
 ```
 
-then use commands.
+---
 
-Save
+### 3. Extended Command Mode
 
+Enter this mode by pressing:
+
+```bash
+:
 ```
+
+Common commands:
+
+Save file
+
+```bash
 :w
 ```
 
 Quit
 
-```
+```bash
 :q
 ```
 
-Save & Quit
+Save and Quit
 
-```
+```bash
 :wq
 ```
 
-Quit without saving
+Quit without Saving
 
-```
+```bash
 :q!
 ```
+
+---
+
+## Basic Vim Workflow
+
+Open a file:
+
+```bash
+vim filename
+```
+
+1. Vim opens in **Command Mode**.
+2. Press **i** to enter **Insert Mode (Edit Mode)**.
+3. Press **Esc** to return to **Command Mode**.
+4. Press **:** to enter **Extended Command Mode**.
+5. Use `:w`, `:q`, `:wq`, or `:q!`.
 
 ---
 
@@ -288,13 +323,13 @@ Linux supports different file types.
 
 | File Type | Description |
 |-----------|-------------|
-| Regular File | Normal files |
-| Directory | Stores files and folders |
-| Symbolic Link | Shortcut to another file |
-| Character Device | Keyboard, terminal |
-| Block Device | Hard disk, SSD |
-| Socket | Process communication |
-| Named Pipe (FIFO) | Inter-process communication |
+| Regular File | Stores normal data files |
+| Directory | Contains files and directories |
+| Symbolic Link | Shortcut to another file or directory |
+| Character Device | Represents devices like keyboard and terminal |
+| Block Device | Represents storage devices such as HDD or SSD |
+| Socket | Used for communication between processes |
+| Named Pipe (FIFO) | Used for inter-process communication |
 
 ---
 
@@ -322,13 +357,15 @@ Linux supports different file types.
 
 # Module Status
 
-Completed:
+**Completed**
+
 - Linux Introduction
 - Linux File System
-- Basic Commands
-- File Operations
+- Basic Linux Commands
+- File & Directory Operations
 - Vim Editor
 - Linux File Types
 
-Next Module:
+**Next Module**
+
 - Users & Groups
