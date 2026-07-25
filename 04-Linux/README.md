@@ -11,14 +11,22 @@ This folder contains my learning notes and hands-on practice from the Linux modu
 - File & Directory Operations
 - Vim Editor
 - Linux File Types
+- Filters
+- Log Files
+- Search & Replace
 
 ## Practical Work
 
 - Navigated the Linux file system
 - Practiced file and directory management
-- Used common Linux commands
-- Edited files using Vim
+- Executed common Linux commands
+- Created, copied, moved, and deleted files/directories
+- Edited files using the Vim editor
 - Explored Linux file types
+- Searched text using `grep`
+- Viewed large files using `less` and `more`
+- Read log files using `head` and `tail`
+- Performed search and replace operations using `sed`
 
 ## Files
 
@@ -31,4 +39,4 @@ This folder contains my learning notes and hands-on practice from the Linux modu
 
 ## Next Module
 
-➡️ Users & Groups
+➡️ IO & Redirections

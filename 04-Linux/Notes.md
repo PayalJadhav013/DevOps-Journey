@@ -353,11 +353,165 @@ Linux supports different file types.
 - history
 - clear
 
+
+---
+
+# 7. Linux Filters & Text Processing
+
+Linux filters process text by reading input, performing operations, and producing output. They are commonly used with files, logs, and pipelines.
+
+## grep
+
+Searches for a specific word or pattern in a file.
+
+Example:
+
+```bash
+grep "error" logfile.txt
+```
+
+Useful options:
+
+```bash
+grep -i "linux" file.txt    # Ignore case
+grep -n "hello" file.txt    # Show line numbers
+grep -v "test" file.txt     # Exclude matching lines
+```
+
+---
+
+## less
+
+Displays file content one screen at a time.
+
+```bash
+less file.txt
+```
+
+Useful keys:
+
+- `Space` → Next page
+- `b` → Previous page
+- `/word` → Search
+- `q` → Quit
+
+---
+
+## more
+
+Displays file content page by page.
+
+```bash
+more file.txt
+```
+
+---
+
+## head
+
+Displays the first 10 lines of a file.
+
+```bash
+head file.txt
+```
+
+Show first 20 lines:
+
+```bash
+head -20 file.txt
+```
+
+---
+
+## tail
+
+Displays the last 10 lines of a file.
+
+```bash
+tail file.txt
+```
+
+View logs in real time:
+
+```bash
+tail -f logfile.log
+```
+
+---
+
+# 8. Linux Log Files
+
+Linux stores logs that help monitor system activity and troubleshoot issues.
+
+Common log locations:
+
+```text
+/var/log/
+```
+
+Examples:
+
+```text
+/var/log/messages
+/var/log/syslog
+/var/log/secure
+/var/log/auth.log
+/var/log/dmesg
+```
+
+Useful commands:
+
+```bash
+cat /var/log/syslog
+less /var/log/syslog
+tail -f /var/log/syslog
+grep "error" /var/log/syslog
+```
+
+---
+
+# 9. Search and Replace
+
+Use `sed` to search and replace text.
+
+Replace the first occurrence:
+
+```bash
+sed 's/Linux/Ubuntu/' file.txt
+```
+
+Replace all occurrences:
+
+```bash
+sed 's/Linux/Ubuntu/g' file.txt
+```
+
+Replace and save changes:
+
+```bash
+sed -i 's/old/new/g' file.txt
+```
+
+---
+
+# Practical Commands Practiced
+
+- grep
+- grep -i
+- grep -n
+- grep -v
+- less
+- more
+- head
+- tail
+- tail -f
+- sed
+
 ---
 
 # Module Status
 
-**Completed**
+Completed
 
 - Linux Introduction
 - Linux File System
@@ -365,7 +519,10 @@ Linux supports different file types.
 - File & Directory Operations
 - Vim Editor
 - Linux File Types
+- Linux Filters
+- Linux Log Files
+- Search & Replace
 
 **Next Module**
 
-- Users & Groups
+- IO & Directions
