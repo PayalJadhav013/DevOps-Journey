@@ -58,14 +58,15 @@ The primary goal of this repository is to strengthen my understanding of DevOps 
 - File & Directory Operations
 - Vim Editor
 - Linux File Types
+- Linux Filters
+- Linux Log Files
+- Search & Replace
 
 ### Commands Practiced
 
 ```bash
 pwd
 ls
-ls -l
-ls -a
 cd
 mkdir
 touch
@@ -75,20 +76,26 @@ rm
 cat
 head
 tail
-whoami
+grep
+less
+more
+sed
 history
+whoami
 clear
 vim
 ```
 
 ### Hands-on Completed
 
-- Explored the Linux file system
-- Navigated directories using Linux commands
-- Created, copied, moved, and deleted files/directories
-- Viewed file contents using Linux utilities
-- Practiced editing files using the Vim editor
-- Learned different Linux file types and their purposes
+- Navigated the Linux file system
+- Performed file and directory operations
+- Edited files using Vim
+- Worked with different Linux file types
+- Searched file contents using `grep`
+- Viewed large files using `less` and `more`
+- Monitored log files using `tail -f`
+- Performed search and replace operations using `sed`
 
 ---
 
