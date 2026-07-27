@@ -14,6 +14,10 @@ This folder contains my learning notes and hands-on practice from the Linux modu
 - Filters
 - Log Files
 - Search & Replace
+- I/O Redirection
+- Pipes
+- File Searching
+- Users & Groups
 
 ## Practical Work
 
@@ -27,6 +31,11 @@ This folder contains my learning notes and hands-on practice from the Linux modu
 - Viewed large files using `less` and `more`
 - Read log files using `head` and `tail`
 - Performed search and replace operations using `sed`
+- Practiced I/O redirection and pipes
+- Searched files using `find` and `locate`
+- Managed Linux users and groups
+- Created and deleted users and groups
+- Switched users and managed passwords
 
 ## Files
 
@@ -39,4 +48,4 @@ This folder contains my learning notes and hands-on practice from the Linux modu
 
 ## Next Module
 
-➡️ IO & Redirections
+➡️ File Permissions

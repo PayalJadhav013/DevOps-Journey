@@ -509,6 +509,253 @@ sed -i 's/old/new/g' file.txt
 
 ---
 
+---
+
+# 10. Input / Output (I/O) Redirection
+
+I/O Redirection allows the output of one command to be redirected to a file, another command, or discarded.
+
+### Standard Streams
+
+- Standard Input (stdin)
+- Standard Output (stdout)
+- Standard Error (stderr)
+
+### Common Commands
+
+Display system uptime
+
+```bash
+uptime
+```
+
+Display memory usage
+
+```bash
+free -m
+```
+
+Display disk usage
+
+```bash
+df -h
+```
+
+Print text to the terminal
+
+```bash
+echo "Hello Linux"
+```
+
+Redirect output to a file
+
+```bash
+echo "Hello Linux" > file.txt
+```
+
+Append output to a file
+
+```bash
+echo "DevOps" >> file.txt
+```
+
+Discard output
+
+```bash
+command > /dev/null
+```
+
+---
+
+# 11. Pipes
+
+A pipe (`|`) passes the output of one command as the input to another command.
+
+Example:
+
+```bash
+ls -l | grep txt
+```
+
+```bash
+cat file.txt | less
+```
+
+---
+
+# 12. Searching Files
+
+## find
+
+Search files and directories based on different criteria.
+
+```bash
+find /home -name file.txt
+```
+
+```bash
+find . -type f
+```
+
+---
+
+## locate
+
+Quickly searches files using a pre-built database.
+
+```bash
+locate file.txt
+```
+
+---
+
+## updatedb
+
+Updates the database used by the `locate` command.
+
+```bash
+updatedb
+```
+
+---
+
+## mlocate
+
+`mlocate` is the package that provides the `locate` command.
+
+---
+
+# 13. Users and Groups
+
+Linux supports multiple users with different permission levels.
+
+### Types of Users
+
+- Root User
+- Regular User
+- Service/System User
+
+---
+
+## User Information Commands
+
+Display first user entry
+
+```bash
+head -1 /etc/passwd
+```
+
+Display user information
+
+```bash
+id vagrant
+```
+
+Display group information
+
+```bash
+grep vagrant /etc/group
+```
+
+Display last few lines
+
+```bash
+tail -4 /etc/passwd
+```
+
+---
+
+## User Management
+
+Create user
+
+```bash
+useradd aws
+```
+
+Set password
+
+```bash
+passwd aws
+```
+
+Switch user
+
+```bash
+su - ansible
+```
+
+Display login history
+
+```bash
+last
+```
+
+Display open files of a user
+
+```bash
+lsof -u vagrant
+```
+
+Delete user
+
+```bash
+userdel aws
+```
+
+Delete user with home directory
+
+```bash
+userdel -r aws
+```
+
+---
+
+## Group Management
+
+Create group
+
+```bash
+groupadd devops
+```
+
+Delete group
+
+```bash
+groupdel devops
+```
+
+---
+
+# Practical Commands Practiced
+
+- uptime
+- free -m
+- df -h
+- echo
+- >
+- >>
+- /dev/null
+- |
+- find
+- locate
+- updatedb
+- head
+- tail
+- id
+- grep
+- useradd
+- userdel
+- userdel -r
+- passwd
+- su
+- last
+- lsof
+- groupadd
+- groupdel
+
+---
+
 # Module Status
 
 Completed
@@ -522,7 +769,12 @@ Completed
 - Linux Filters
 - Linux Log Files
 - Search & Replace
+- I/O Redirection
+- Pipes
+- File Searching
+- Users & Groups
 
 **Next Module**
 
-- IO & Directions
+- File Permissions
+

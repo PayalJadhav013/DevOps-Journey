@@ -48,19 +48,24 @@ The primary goal of this repository is to strengthen my understanding of DevOps 
 
 # 📅 Latest Progress
 
-## Linux Fundamentals
+## Linux Module
 
 ### Topics Covered
 
-- Introduction to Linux
+- Linux Introduction
+- Linux Architecture
 - Linux File System
 - Basic Linux Commands
 - File & Directory Operations
 - Vim Editor
 - Linux File Types
 - Linux Filters
-- Linux Log Files
+- Log Files
 - Search & Replace
+- I/O Redirection
+- Pipes
+- File Searching (`find`, `locate`, `updatedb`)
+- Users & Groups
 
 ### Commands Practiced
 
@@ -80,6 +85,23 @@ grep
 less
 more
 sed
+echo
+uptime
+free -m
+df -h
+find
+locate
+updatedb
+id
+useradd
+userdel
+userdel -r
+passwd
+groupadd
+groupdel
+su
+last
+lsof
 history
 whoami
 clear
@@ -90,12 +112,17 @@ vim
 
 - Navigated the Linux file system
 - Performed file and directory operations
-- Edited files using Vim
-- Worked with different Linux file types
-- Searched file contents using `grep`
-- Viewed large files using `less` and `more`
-- Monitored log files using `tail -f`
-- Performed search and replace operations using `sed`
+- Edited files using the Vim editor
+- Explored Linux file types
+- Used Linux filters for text processing
+- Viewed and monitored log files
+- Performed search and replace using `sed`
+- Practiced I/O redirection and pipes
+- Searched files using `find` and `locate`
+- Updated the `locate` database using `updatedb`
+- Created and managed Linux users and groups
+- Assigned passwords and switched between users
+- Viewed login history and user information
 
 ---
 
@@ -174,7 +201,7 @@ DevOps-Journey/
 | Introduction | ✅ Completed |
 | Prerequisites & Setup | ✅ Completed |
 | VM Setup | ✅ Completed |
-| Linux | 🚧 In Progress |
+| Linux | 🚧 In Progress(Users & Groups Completed) |
 | Remaining Modules | ⏳ Planned |
 
 ---
