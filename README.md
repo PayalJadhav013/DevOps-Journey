@@ -66,6 +66,8 @@ The primary goal of this repository is to strengthen my understanding of DevOps 
 - Pipes
 - File Searching (`find`, `locate`, `updatedb`)
 - Users & Groups
+- File Permissions
+- Sudo (Superuser Privileges)
 
 ### Commands Practiced
 
@@ -95,13 +97,13 @@ updatedb
 id
 useradd
 userdel
-userdel -r
-passwd
 groupadd
 groupdel
-su
-last
-lsof
+passwd
+chmod
+chown
+chgrp
+sudo
 history
 whoami
 clear
@@ -111,19 +113,16 @@ vim
 ### Hands-on Completed
 
 - Navigated the Linux file system
-- Performed file and directory operations
-- Edited files using the Vim editor
-- Explored Linux file types
+- Managed files and directories
+- Edited files using Vim
 - Used Linux filters for text processing
-- Viewed and monitored log files
-- Performed search and replace using `sed`
+- Performed search and replace operations
 - Practiced I/O redirection and pipes
 - Searched files using `find` and `locate`
-- Updated the `locate` database using `updatedb`
 - Created and managed Linux users and groups
-- Assigned passwords and switched between users
-- Viewed login history and user information
-
+- Assigned passwords and managed group memberships
+- Changed file ownership and permissions using symbolic and numeric methods
+- Practiced using `sudo` for privileged commands
 ---
 
 # 🛠 Environment Setup

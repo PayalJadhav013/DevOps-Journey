@@ -18,24 +18,19 @@ This folder contains my learning notes and hands-on practice from the Linux modu
 - Pipes
 - File Searching
 - Users & Groups
+- File Permissions
+- Sudo
 
 ## Practical Work
 
-- Navigated the Linux file system
-- Practiced file and directory management
-- Executed common Linux commands
-- Created, copied, moved, and deleted files/directories
-- Edited files using the Vim editor
-- Explored Linux file types
-- Searched text using `grep`
-- Viewed large files using `less` and `more`
-- Read log files using `head` and `tail`
-- Performed search and replace operations using `sed`
+- Practiced Linux navigation commands
+- Managed files and directories
+- Edited files using Vim
+- Used filters and search utilities
 - Practiced I/O redirection and pipes
-- Searched files using `find` and `locate`
-- Managed Linux users and groups
-- Created and deleted users and groups
-- Switched users and managed passwords
+- Created and managed Linux users and groups
+- Changed file permissions using symbolic and numeric methods
+- Executed administrative commands using `sudo`
 
 ## Files
 
@@ -44,8 +39,8 @@ This folder contains my learning notes and hands-on practice from the Linux modu
 
 ## Status
 
-✅ Completed
+🚧 In Progress
 
 ## Next Module
 
-➡️ File Permissions
+➡️ Package Management

@@ -756,6 +756,193 @@ groupdel devops
 
 ---
 
+---
+
+# 14. File Permissions
+
+Linux uses file permissions to control who can read, write, or execute files and directories.
+
+## Permission Types
+
+| Permission | Symbol | Meaning |
+|------------|--------|---------|
+| Read | r | View the contents of a file |
+| Write | w | Modify the contents of a file |
+| Execute | x | Execute a file or access a directory |
+
+## Permission Categories
+
+- User (Owner)
+- Group
+- Others
+
+Example:
+
+```text
+-rwxr-xr--
+```
+
+Where:
+
+- `-` → Regular file
+- `rwx` → Owner permissions
+- `r-x` → Group permissions
+- `r--` → Others permissions
+
+---
+
+## Viewing File Permissions
+
+```bash
+ls -l
+```
+
+Displays detailed information, including file permissions.
+
+---
+
+## Changing Permissions – Symbolic Method
+
+The symbolic method uses letters to add or remove permissions.
+
+Common symbols:
+
+- `+` → Add permission
+- `-` → Remove permission
+- `=` → Assign exact permission
+
+Examples:
+
+```bash
+chmod u+x file.txt
+chmod g+w file.txt
+chmod o-r file.txt
+chmod a+r file.txt
+```
+
+Where:
+
+- `u` → User
+- `g` → Group
+- `o` → Others
+- `a` → All users
+
+---
+
+## Changing Permissions – Numeric Method
+
+The numeric method uses numbers.
+
+| Permission | Value |
+|------------|------:|
+| Read (r) | 4 |
+| Write (w) | 2 |
+| Execute (x) | 1 |
+
+Examples:
+
+| Number | Permission |
+|--------:|------------|
+| 7 | rwx |
+| 6 | rw- |
+| 5 | r-x |
+| 4 | r-- |
+| 0 | --- |
+
+Example:
+
+```bash
+chmod 755 file.sh
+chmod 644 notes.txt
+chmod 777 test.sh
+```
+
+Common Permission Values
+
+| Permission | Meaning |
+|------------|---------|
+| 755 | Owner: rwx, Group: r-x, Others: r-x |
+| 644 | Owner: rw-, Group: r--, Others: r-- |
+| 700 | Owner only has full access |
+| 777 | Everyone has full access (not recommended) |
+
+---
+
+## Changing Ownership
+
+Change file owner:
+
+```bash
+chown username file.txt
+```
+
+Change file group:
+
+```bash
+chgrp groupname file.txt
+```
+
+Change both owner and group:
+
+```bash
+chown username:groupname file.txt
+```
+
+---
+
+# 15. Sudo
+
+Sudo (Super User Do) allows a permitted user to execute commands with administrative (root) privileges.
+
+Instead of logging in as the root user, users can perform administrative tasks using `sudo`.
+
+Example:
+
+```bash
+sudo command
+```
+
+Examples:
+
+```bash
+sudo yum update
+sudo systemctl restart sshd
+sudo useradd developer
+```
+
+---
+
+## Why Use Sudo?
+
+- Provides temporary administrative access.
+- Improves system security.
+- Reduces the need to log in as the root user.
+- Allows administrators to control which users can execute privileged commands.
+
+---
+
+## Checking Sudo Access
+
+```bash
+sudo -l
+```
+
+Displays the commands the current user is allowed to run using sudo.
+
+---
+
+# Commands Practiced
+
+```bash
+ls -l
+chmod
+chown
+chgrp
+sudo
+sudo -l
+```
+---
+
 # Module Status
 
 Completed
@@ -773,8 +960,10 @@ Completed
 - Pipes
 - File Searching
 - Users & Groups
+- File Permissions
+- Sudo Commands
 
 **Next Module**
 
-- File Permissions
+- Package Management
 
