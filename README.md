@@ -200,7 +200,7 @@ DevOps-Journey/
 | Introduction | ✅ Completed |
 | Prerequisites & Setup | ✅ Completed |
 | VM Setup | ✅ Completed |
-| Linux | 🚧 In Progress(Users & Groups Completed) |
+| Linux | 🚧 |
 | Remaining Modules | ⏳ Planned |
 
 ---

@@ -1,13 +1,22 @@
 # Linux Notes
 
-## Module Completed
+## Topics Covered
 
-- Introduction to Linux
-- Linux File System
-- Basic Linux Commands
-- File & Directory Operations
-- Vim Editor
-- Linux File Types
+1. [Introduction to Linux](#1-introduction-to-linux)
+2. [Linux File System](#2-linux-file-system)
+3. [Basic Linux Commands](#3-basic-linux-commands)
+4. [File & Directory Operations](#4-file-and-directory-operations)
+5. [Vim Editor](#5-vim-editor)
+6. [Linux File Types](#6-linux-file-types)
+7. [Linux Filters & Text Processing](#7-linux-filters--text-processing)
+8. [Linux Log Files](#8-linux-log-files)
+9. [Search and Replace](#9-search-and-replace)
+10. [Input / Output (I/O) Redirection](#10-input--output-io-redirection)
+11. [Pipes](#11-pipes)
+12. [Searching Files](#12-searching-files)
+13. [Users and Groups](#13-users-and-groups)
+14. [File Permissions](#14-file-permissions)
+15. [Sudo](#15-sudo)
 
 ---
 
@@ -733,8 +742,8 @@ groupdel devops
 - free -m
 - df -h
 - echo
-- >
-- >>
+- (>)
+- (>>)
 - /dev/null
 - |
 - find
@@ -753,8 +762,6 @@ groupdel devops
 - lsof
 - groupadd
 - groupdel
-
----
 
 ---
 
@@ -945,23 +952,9 @@ sudo -l
 
 # Module Status
 
-Completed
+**Status:** 🚧 In Progress
 
-- Linux Introduction
-- Linux File System
-- Basic Linux Commands
-- File & Directory Operations
-- Vim Editor
-- Linux File Types
-- Linux Filters
-- Linux Log Files
-- Search & Replace
-- I/O Redirection
-- Pipes
-- File Searching
-- Users & Groups
-- File Permissions
-- Sudo Commands
+**Topics Completed:** 15
 
 **Next Module**
 
