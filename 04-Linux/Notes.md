@@ -2,21 +2,25 @@
 
 ## Topics Covered
 
-1. [Introduction to Linux](#1-introduction-to-linux)
-2. [Linux File System](#2-linux-file-system)
-3. [Basic Linux Commands](#3-basic-linux-commands)
-4. [File & Directory Operations](#4-file-and-directory-operations)
-5. [Vim Editor](#5-vim-editor)
-6. [Linux File Types](#6-linux-file-types)
-7. [Linux Filters & Text Processing](#7-linux-filters--text-processing)
-8. [Linux Log Files](#8-linux-log-files)
-9. [Search and Replace](#9-search-and-replace)
-10. [Input / Output (I/O) Redirection](#10-input--output-io-redirection)
-11. [Pipes](#11-pipes)
-12. [Searching Files](#12-searching-files)
-13. [Users and Groups](#13-users-and-groups)
-14. [File Permissions](#14-file-permissions)
-15. [Sudo](#15-sudo)
+- Introduction to Linux
+- Linux File System
+- Basic Linux Commands
+- File & Directory Operations
+- Vim Editor
+- Linux File Types
+- Linux Filters & Text Processing
+- Linux Log Files
+- Search and Replace
+- Input / Output (I/O) Redirection
+- Pipes
+- Searching Files
+- Users and Groups
+- File Permissions
+- Sudo
+- Package Management
+- Linux Services
+- Linux Processes
+- Archiving & Compression
 
 ---
 
@@ -936,8 +940,6 @@ sudo -l
 
 Displays the commands the current user is allowed to run using sudo.
 
----
-
 # Commands Practiced
 
 ```bash
@@ -947,16 +949,230 @@ chown
 chgrp
 sudo
 sudo -l
+
+---
+
+16. Package Management
+
+Package management is the process of installing, updating, removing, and managing software packages in Linux.
+
+Different Linux distributions use different package managers.
+
+|Distribution|	Package Manager|
+|------------|-----------------|
+|RHEL / CentOS|	yum / dnf / rpm|
+|Ubuntu / Debian|	apt / dpkg|
+
+## RPM (Red Hat Package Manager)
+
+List installed packages
+
+```bash
+rpm -qa
+```
+
+Install an RPM package
+```bash
+rpm -ivh package.rpm
+
+Where:
+
+-`i` → Install
+-`v` → Verbose
+-`h` → Progress bar
+
+## DPKG (Debian Package Manager)
+
+List installed packages
+
+```bash
+dpkg -l
+```
+## Download Packages
+
+Download a file from the internet.
+```bash
+whet <URL>
+```
+Example
+```bash
+wget https://example.com/file.rpm
+```
+
+## YUM Package Manager
+
+Install package
+```bash
+yum install httpd
+```
+Install automatically
+```bash
+yum install httpd -y
+```
+Upgrade packages
+```bash
+yum upgrade
+```
+## DNF Package Manager
+
+Install package
+```bash
+dnf install httpd
+```
+## Telnet
+
+Used for testing network connectivity.
+```bash
+telnet hostname port
 ```
 ---
 
+# 17. Linux Services
+
+Linux services are background programs managed by systemd.
+
+Common service management commands:
+
+Check service status
+```bash
+systemctl status httpd
+```
+Start service
+```bash
+systemctl start httpd
+```
+Stop service
+```bash
+systemctl stop httpd
+```
+Enable service at boot
+```bash
+systemctl enable httpd
+```
+Check if service is active
+```bash
+systemctl is-active httpd
+```
+View enabled service link
+```bash
+cat /etc/systemd/system/multi-user.target.wants/httpd.service
+```
+---
+
+# 18. Linux Processes
+
+A process is a running instance of a program.
+Viewing Processes
+
+Interactive process monitor
+```bash
+top
+```
+List ll processes
+``bash
+ps aux
+```
+Another process listing
+```bash
+ps -ef
+```
+Search process
+```bash
+ps -ef | grep httpd
+```
+## Killing Processes
+
+Terminate process
+```bash
+kill PID
+```
+Force terminate
+```bash
+kill -9 PID
+```
+Kill multiple processes
+```bash
+ps -ef | grep httpd | grep -v grep | awk '{print $2}' | xargs kill -9
+```
+---
+# 19. Archiving & Compression
+
+Archiving combines multiple files into one file.
+
+Compression reduces file size.
+
+TAR Archive
+
+Create archive
+```bash
+tar -czvf archive.tar.gz folder
+```
+Options:
+
+-`c` → Create
+-`z` → Compress (gzip)
+-`v` → Verbose
+-`f` → File name
+
+Extract archive
+```bash
+tar -xzvf archive.tar.gz
+```
+Extract to another directory
+```bash
+tar -xzvf archive.tar.gz -C /opt/
+```
+
+# ZIP Archive
+
+Install zip utilities
+```bash
+yum install zip unzip -y
+```
+Create zip
+```bash
+zip -r archive.zip folder
+```
+Extract zip
+```bash
+unzip archive.zip
+```
+Checking Archive Type
+```bash
+file archive.tar.gz
+```
+---
+# Practical Commands Practiced
+
+- rpm -qa
+- rpm -ivh
+- dpkg -l
+- wget
+- yum install
+- yum upgrade
+- dnf install
+- telnet
+- systemctl
+- top
+- ps aux
+- ps -ef
+- grep
+- kill
+- kill -9
+- awk
+- xargs
+- tar
+- zip
+- unzip
+- file
+---
 # Module Status
 
 **Status:** 🚧 In Progress
 
-**Topics Completed:** 15
+**Topics Completed:** 19
 
 **Next Module**
 
-- Package Management
+- Networking Basics
 

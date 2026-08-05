@@ -20,6 +20,10 @@ This folder contains my learning notes and hands-on practice from the Linux modu
 - Users & Groups
 - File Permissions
 - Sudo
+- Package Management
+- Linux Services
+- Linux Processes
+- Archiving & Compression
 
 ## Practical Work
 
@@ -31,6 +35,10 @@ This folder contains my learning notes and hands-on practice from the Linux modu
 - Created and managed Linux users and groups
 - Changed file permissions using symbolic and numeric methods
 - Executed administrative commands using `sudo`
+- Installed and managed software packages
+- Managed system services using systemctl
+- Monitored and controlled Linux processes
+- Created and extracted TAR and ZIP archives
 
 ## Files
 
@@ -43,4 +51,4 @@ This folder contains my learning notes and hands-on practice from the Linux modu
 
 ## Next Module
 
-➡️ Package Management
+➡️ Networking Basics
