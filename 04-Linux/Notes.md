@@ -940,7 +940,6 @@ sudo -l
 
 Displays the commands the current user is allowed to run using sudo.
 
-```md
 # Commands Practiced
 
 ```bash
@@ -950,7 +949,8 @@ chown
 chgrp
 sudo
 sudo -l
-
+```
+---
 
 # 16. Package Management
 
