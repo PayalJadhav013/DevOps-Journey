@@ -950,7 +950,6 @@ chgrp
 sudo
 sudo -l
 
----
 
 # 16. Package Management
 
