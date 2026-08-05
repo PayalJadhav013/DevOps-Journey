@@ -940,6 +940,7 @@ sudo -l
 
 Displays the commands the current user is allowed to run using sudo.
 
+```md
 # Commands Practiced
 
 ```bash
