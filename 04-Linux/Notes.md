@@ -952,7 +952,7 @@ sudo -l
 
 ---
 
-16. Package Management
+# 16. Package Management
 
 Package management is the process of installing, updating, removing, and managing software packages in Linux.
 

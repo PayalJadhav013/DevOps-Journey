@@ -23,14 +23,14 @@ The primary goal of this repository is to strengthen my understanding of DevOps 
 - [x] Introduction
 - [x] Prerequisites & Environment Setup
 - [x] Virtual Machine(VM) Setup
+- [x] Linux
 
 ## 🚧 In Progress
 
-- [ ] Linux
+- [ ] Networking
 
 ## 📌 Upcoming
 
-- [ ] Networking
 - [ ] Git & GitHub
 - [ ] Bash Scripting
 - [ ] Maven
@@ -68,6 +68,10 @@ The primary goal of this repository is to strengthen my understanding of DevOps 
 - Users & Groups
 - File Permissions
 - Sudo (Superuser Privileges)
+- Package Management
+- Linux Services
+- Linux Processes
+- Archiving & Compression
 
 ### Commands Practiced
 
@@ -108,6 +112,27 @@ history
 whoami
 clear
 vim
+rpm -qa
+rpm -ivh
+dpkg -l
+wget
+yum install
+yum upgrade
+dnf install
+telnet
+systemctl
+top
+ps aux
+ps -ef
+grep
+kill
+kill -9
+awk
+xargs
+tar
+zip
+unzip
+file
 ```
 
 ### Hands-on Completed
@@ -123,6 +148,10 @@ vim
 - Assigned passwords and managed group memberships
 - Changed file ownership and permissions using symbolic and numeric methods
 - Practiced using `sudo` for privileged commands
+- Installed and managed software packages
+- Managed system services using systemctl
+- Monitored and controlled Linux processes
+- Created and extracted TAR and ZIP archives
 ---
 
 # 🛠 Environment Setup
@@ -200,7 +229,8 @@ DevOps-Journey/
 | Introduction | ✅ Completed |
 | Prerequisites & Setup | ✅ Completed |
 | VM Setup | ✅ Completed |
-| Linux | 🚧 |
+| Linux | ✅ Completed |
+| Networking | 🚧 |
 | Remaining Modules | ⏳ Planned |
 
 ---
