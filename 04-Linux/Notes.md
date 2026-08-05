@@ -958,11 +958,12 @@ Package management is the process of installing, updating, removing, and managin
 
 Different Linux distributions use different package managers.
 
-|Distribution|	Package Manager|
-|------------|-----------------|
-|RHEL / CentOS|	yum / dnf / rpm|
-|Ubuntu / Debian|	apt / dpkg|
+| Distribution | Package Manager |
+|--------------|-----------------|
+| RHEL / CentOS | yum / dnf / rpm |
+| Ubuntu / Debian | apt / dpkg |
 
+---
 ## RPM (Red Hat Package Manager)
 
 List installed packages
