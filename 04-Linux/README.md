@@ -24,6 +24,7 @@ This folder contains my learning notes and hands-on practice from the Linux modu
 - Linux Services
 - Linux Processes
 - Archiving & Compression
+- Ubuntu Commands
 
 ## Practical Work
 
@@ -39,6 +40,7 @@ This folder contains my learning notes and hands-on practice from the Linux modu
 - Managed system services using systemctl
 - Monitored and controlled Linux processes
 - Created and extracted TAR and ZIP archives
+- Practiced Ubuntu package and service management
 
 ## Files
 
@@ -47,8 +49,4 @@ This folder contains my learning notes and hands-on practice from the Linux modu
 
 ## Status
 
-🚧 In Progress
-
-## Next Module
-
-➡️ Networking Basics
+✅ Completed

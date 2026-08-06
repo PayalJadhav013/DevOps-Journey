@@ -21,7 +21,7 @@
 - Linux Services
 - Linux Processes
 - Archiving & Compression
-
+- Ubuntu Commands
 ---
 
 # 1. Introduction to Linux
@@ -522,7 +522,6 @@ sed -i 's/old/new/g' file.txt
 
 ---
 
----
 
 # 10. Input / Output (I/O) Redirection
 
@@ -975,12 +974,12 @@ rpm -qa
 Install an RPM package
 ```bash
 rpm -ivh package.rpm
-
+```
 Where:
 
--`i` → Install
--`v` → Verbose
--`h` → Progress bar
+- `i` → Install
+- `v` → Verbose
+- `h` → Progress bar
 
 ## DPKG (Debian Package Manager)
 
@@ -993,7 +992,7 @@ dpkg -l
 
 Download a file from the internet.
 ```bash
-whet <URL>
+wget <URL>
 ```
 Example
 ```bash
@@ -1069,8 +1068,8 @@ Interactive process monitor
 ```bash
 top
 ```
-List ll processes
-``bash
+List all processes
+```bash
 ps aux
 ```
 Another process listing
@@ -1110,10 +1109,10 @@ tar -czvf archive.tar.gz folder
 ```
 Options:
 
--`c` → Create
--`z` → Compress (gzip)
--`v` → Verbose
--`f` → File name
+- `c` → Create
+- `z` → Compress (gzip)
+- `v` → Verbose
+- `f` → File name
 
 Extract archive
 ```bash
@@ -1124,7 +1123,7 @@ Extract to another directory
 tar -xzvf archive.tar.gz -C /opt/
 ```
 
-# ZIP Archive
+## ZIP Archive
 
 Install zip utilities
 ```bash
@@ -1167,13 +1166,108 @@ file archive.tar.gz
 - unzip
 - file
 ---
+
+# 20. Ubuntu Commands
+
+Ubuntu is a Debian-based Linux distribution that uses the APT package management system.
+
+## APT Package Management
+
+### Update Package Repository
+
+Updates the local package index with the latest available package information.
+
+```bash
+apt update
+```
+## Search for a Package
+
+Searches for a package in the configured repositories.
+```bash
+apt search tree
+```
+## Install a Package
+
+Installs a package using APT.
+```bash
+apt install tree
+```
+Install Apache Web Server:
+```bash
+apt install apache2
+```
+## Check Installed Packages
+
+Ubuntu uses dpkg to manage installed Debian packages.
+
+List installed packages:
+```bash
+dpkg -l
+```
+Search for a specific installed package:
+```bash
+dpkg -l | grep tree
+```
+## Install a .deb Package
+
+Download a .deb package:
+```bash
+wget http://archive.ubuntu.com/ubuntu/pool/universe/t/tree/tree_1.7.0-3_amd64.deb
+```
+Install the downloaded .deb package:
+```bash
+dpkg -i tree_1.7.0-3_amd64.deb
+```
+## Remove a Package
+
+Removes the package but may leave configuration files.
+```bash
+apt remove apache2
+```
+## Purge a Package
+
+Removes the package along with its configuration files.
+```bash
+apt purge apache2
+```
+## Upgrade Packages
+
+Updates installed packages to newer available versions.
+```bash
+apt upgrade
+```
+---
+# Ubuntu Service Management
+
+Ubuntu uses systemctl to manage services.
+
+Check Apache service status:
+```bash
+systemctl status apache2
+```
+Check whether Apache is enabled to start automatically at boot:
+```bash
+systemctl is-enabled apache2
+```
+---
+# Common Ubuntu Commands Practiced
+- apt update
+- apt search tree
+- apt install tree
+- apt install apache2
+- apt upgrade
+- apt remove apache2
+- apt purge apache2
+- dpkg -l
+- dpkg -l | grep tree
+- dpkg -i tree_1.7.0-3_amd64.deb
+- wget <URL>
+- systemctl status apache2
+- systemctl is-enabled apache2
+- clear
+---
 # Module Status
 
-**Status:** 🚧 In Progress
+**Status:** ✅ Completed
 
-**Topics Completed:** 19
-
-**Next Module**
-
-- Networking Basics
-
+**Topics Completed:** 20

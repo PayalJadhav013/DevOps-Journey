@@ -12,7 +12,7 @@ The primary goal of this repository is to strengthen my understanding of DevOps 
 - Learn Linux, Networking, Git, Docker, Kubernetes, AWS, Jenkins, Terraform, and Ansible
 - Practice Infrastructure as Code (IaC) and CI/CD
 - Build real-world DevOps projects
-- Document commands, notes, and best practices
+- Document learning notes, hands-on practice, and best practices
 
 ---
 
@@ -72,68 +72,8 @@ The primary goal of this repository is to strengthen my understanding of DevOps 
 - Linux Services
 - Linux Processes
 - Archiving & Compression
-
-### Commands Practiced
-
-```bash
-pwd
-ls
-cd
-mkdir
-touch
-cp
-mv
-rm
-cat
-head
-tail
-grep
-less
-more
-sed
-echo
-uptime
-free -m
-df -h
-find
-locate
-updatedb
-id
-useradd
-userdel
-groupadd
-groupdel
-passwd
-chmod
-chown
-chgrp
-sudo
-history
-whoami
-clear
-vim
-rpm -qa
-rpm -ivh
-dpkg -l
-wget
-yum install
-yum upgrade
-dnf install
-telnet
-systemctl
-top
-ps aux
-ps -ef
-grep
-kill
-kill -9
-awk
-xargs
-tar
-zip
-unzip
-file
-```
+- Ubuntu Commands
+---
 
 ### Hands-on Completed
 
@@ -149,9 +89,10 @@ file
 - Changed file ownership and permissions using symbolic and numeric methods
 - Practiced using `sudo` for privileged commands
 - Installed and managed software packages
-- Managed system services using systemctl
+- Managed system services using `systemctl`
 - Monitored and controlled Linux processes
 - Created and extracted TAR and ZIP archives
+- Practiced Ubuntu package and service management
 ---
 
 # 🛠 Environment Setup
@@ -230,7 +171,7 @@ DevOps-Journey/
 | Prerequisites & Setup | ✅ Completed |
 | VM Setup | ✅ Completed |
 | Linux | ✅ Completed |
-| Networking | 🚧 |
+| Networking | 🚧 Next |
 | Remaining Modules | ⏳ Planned |
 
 ---
