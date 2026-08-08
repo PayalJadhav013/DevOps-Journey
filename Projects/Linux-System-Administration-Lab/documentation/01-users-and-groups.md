@@ -12,14 +12,14 @@ Practice Linux user and group management by creating a user, creating a group, a
 useradd devuser
 ```
 Created a regular user named `devuser`.
----
+
 
 ## 2. Create a Group
 ```bash
 groupadd devops
 ```
 Created a group named `devops`.
----
+
 ## 3. Add User to Group
 ```bash
 usermod -aG devops devuser
@@ -35,13 +35,13 @@ Output:
 uid=1001(devuser) gid=1001(devuser) groups=1001(devuser),1006(devops)
 ```
 This confirms that `devuser` belongs to the `devops` group.
----
+
 ## 4. Set User Password
 ```bash
 passwd devuser
 ```
 A password was configured successfully for `devuser`.
----
+
 ## 5. Check User Groups
 ```bash
 groups devuser
@@ -51,7 +51,7 @@ Output:
 devuser : devuser devops
 ```
 This confirms that `devuser` belongs to both the primary group `devuser` and the supplementary group `devops`.
----
+
 ## 6. View Group Information
 ```bash
 getent group
@@ -63,7 +63,7 @@ Relevant entry:
 devops:x:1006:devuser
 ```
 This confirms that `devuser` is a member of the `devops` group.
----
+
 ## 7. Switch to the User
 ```bash
 su - devuser
