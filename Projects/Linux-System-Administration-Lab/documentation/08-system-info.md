@@ -184,7 +184,7 @@ This overwrites the existing contents of the file with the date output.
 
 Important: `>` overwrites the file, while `>>` appends to the file.
 
-## 13. Count Lines in /etc/passwd
+## 13. Count Lines in `/etc/passwd`
 ```bash
 wc -l /etc/passwd
 ```
