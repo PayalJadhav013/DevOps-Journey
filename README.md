@@ -24,75 +24,79 @@ The primary goal of this repository is to strengthen my understanding of DevOps 
 - [x] Prerequisites & Environment Setup
 - [x] Virtual Machine(VM) Setup
 - [x] Linux
+- [x] Git
 
 ## 🚧 In Progress
 
-- [ ] Networking
+- [ ] Vagrant & Linux Servers
 
 ## 📌 Upcoming
 
-- [ ] Git & GitHub
+- [ ] Variables, JSON & YAML
+- [ ] VProfile Project Setup Manual & Automated
+- [ ] Networking
+- [ ] Introducing Containers
 - [ ] Bash Scripting
-- [ ] Maven
-- [ ] Jenkins
-- [ ] Docker
-- [ ] Kubernetes
+- [ ] AI for Scripting
 - [ ] AWS
-- [ ] Terraform
+- [ ] Build Tools
+- [ ] Continuous Integration and Delivery with Jenkins
+- [ ] GitHub Actions
+- [ ] GITLAB
+- [ ] Python
+- [ ] Learn Terraform
 - [ ] Ansible
-- [ ] Monitoring (Prometheus & Grafana)
-- [ ] CI/CD
+- [ ] Monitoring & Observability
+- [ ] Docker
+- [ ] Containerization
+- [ ] Kubernetes
 - [ ] End-to-End DevOps Project
 
 ---
 
 # 📅 Latest Progress
 
-## Linux Module
+## Git Module
 
 ### Topics Covered
 
-- Linux Introduction
-- Linux Architecture
-- Linux File System
-- Basic Linux Commands
-- File & Directory Operations
-- Vim Editor
-- Linux File Types
-- Linux Filters
-- Log Files
-- Search & Replace
-- I/O Redirection
-- Pipes
-- File Searching (`find`, `locate`, `updatedb`)
-- Users & Groups
-- File Permissions
-- Sudo (Superuser Privileges)
-- Package Management
-- Linux Services
-- Linux Processes
-- Archiving & Compression
-- Ubuntu Commands
+- Git Introduction
+- Version Control
+- Git Repository
+- Git Commit
+- GitHub Setup
+- Git Remote
+- Git Push & Pull
+- Git Branches
+- Branch Switching
+- Git Merge
+- Git Log & Git Show
+- Git Diff
+- Git Restore
+- Git Revert
+- Git Reset & Rollback
+- Git SSH Login
+- Git Tags
+- Semantic Versioning
 ---
 
 ### Hands-on Completed
 
-- Navigated the Linux file system
-- Managed files and directories
-- Edited files using Vim
-- Used Linux filters for text processing
-- Performed search and replace operations
-- Practiced I/O redirection and pipes
-- Searched files using `find` and `locate`
-- Created and managed Linux users and groups
-- Assigned passwords and managed group memberships
-- Changed file ownership and permissions using symbolic and numeric methods
-- Practiced using `sudo` for privileged commands
-- Installed and managed software packages
-- Managed system services using `systemctl`
-- Monitored and controlled Linux processes
-- Created and extracted TAR and ZIP archives
-- Practiced Ubuntu package and service management
+- Created and initialized Git repositories using git init
+- Created and managed files using Git
+- Tracked files using git add
+- Created commits using git commit
+- Connected local repositories with GitHub
+- Pushed and pulled changes between local and remote repositories
+- Created and switched between Git branches
+- Merged branches using git merge
+- Removed and renamed tracked files
+- Viewed commit history using git log and git show
+- Compared changes using git diff
+- Practiced staging and unstaging changes
+- Practiced git restore, git revert, and git reset --hard
+- Configured GitHub SSH authentication
+- Practiced Git tags and Semantic Versioning
 ---
 
 # 🛠 Environment Setup
@@ -124,32 +128,42 @@ The primary goal of this repository is to strengthen my understanding of DevOps 
 
 ---
 
-
 # 📂 Repository Structure
+
 
 ```text
 DevOps-Journey/
 │
 ├── README.md
+│
 ├── 01-Introduction/
 ├── 02-Prerequisites/
 ├── 03-VM-Setup/
 ├── 04-Linux/
-├── 05-Networking/
-├── 06-Git/
-├── 07-Bash/
-├── 08-Maven/
-├── 09-Jenkins/
-├── 10-Docker/
-├── 11-Kubernetes/
-├── 12-AWS/
-├── 13-Terraform/
-├── 14-Ansible/
-├── 15-Monitoring/
+├── 05-Git/
+├── 06-Vagrant-Linux-Servers/
+├── 07-Variables-JSON-YAML/
+├── 08-VProfile-Project/
+├── 09-Networking/
+├── 10-Containers/
+├── 11-Bash-Scripting/
+├── 12-AI-for-Scripting/
+├── 13-AWS/
+├── 14-Build-Tools/
+├── 15-Jenkins/
+├── 16-GitHub-Actions/
+├── 17-GitLab/
+├── 18-Python/
+├── 19-Terraform/
+├── 20-Ansible/
+├── 21-Monitoring-Observability/
+├── 22-Docker/
+├── 23-Containerization/
+├── 24-Kubernetes/
+│
 ├── Projects/
 └── Notes/
 ```
-
 ---
 
 # 📌 Repository Contents
@@ -171,7 +185,8 @@ DevOps-Journey/
 | Prerequisites & Setup | ✅ Completed |
 | VM Setup | ✅ Completed |
 | Linux | ✅ Completed |
-| Networking | 🚧 Next |
+| Git | ✅ Completed |
+| Vagrant & Linux Servers | 🚧 Next |
 | Remaining Modules | ⏳ Planned |
 
 ---
